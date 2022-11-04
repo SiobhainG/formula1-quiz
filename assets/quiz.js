@@ -114,6 +114,27 @@ function getSelected() {
     return answer
 }
 
+// event listener to submit answer when clicking submit button and increase score if correct
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+
+    if(answer) {
+        if(answer === quizData[currentQuiz].correct) {
+            score++
+        }
+        currentQuiz++
+        if(currentQuiz < quizData.length) {
+            loadQuiz()
+         } else {
+             quiz.innerHTML = `
+             <h2>You got ${score}/${quizData.length} questions right!</h2>
+             <button onclick="location.reload()">Try Again?</button>
+             `
+         }
+      }
+  })
+
 
 
 
