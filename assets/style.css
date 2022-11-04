@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Titillium+Web:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/images/abed-ismail-S3Xu9cvq2d0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Tittilum Web', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
