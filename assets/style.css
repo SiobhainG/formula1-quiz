@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(assets/images/abed-ismail-S3Xu9cvq2d0-unsplash.jpg);
+    background-image: url(/assets/images/abed-ismail-S3Xu9cvq2d0-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,4 +16,62 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+.quiz-outer {
+    border: 2px solid #7d5760;
+    background-color: #1f131c;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.quiz-text {
+    color: #ebc3d4;
+    padding: 10px;
+    font-size: 35px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+    color: #ebc3d4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+}
+
+ul li:hover {
+    background-color: #7d5760;
+}
+
+input {
+    visibility: hidden;
+}
+
+button {
+    color: #1f131c;
+    background-color: #ebc3d4;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    background-color: #ed8f79;
+}
+
+
+
+
 
