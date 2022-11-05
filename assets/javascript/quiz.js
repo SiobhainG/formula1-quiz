@@ -16,11 +16,13 @@ const submitBtn = document.getElementById('submit')
 let currentQuiz = 0
 let score = 0
 
+
+
+
 // loads the quiz questions and answers
 
-loadQuiz()
-function loadQuiz() {
-    deselectAnswers()
+displayQuiz()
+function displayQuiz() {
     const currentQuizData = quizData[currentQuiz]
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
@@ -29,19 +31,15 @@ function loadQuiz() {
     d_text.innerText = currentQuizData.d
 }
 
-// function to seselect all answers
-
-function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
-}
 
 // function to return users' answer
 
-function getSelected() {
+function getAnswer() {
     let answer
     answerEls.forEach(answerEl => {
         if(answerEl.checked) {
             answer = answerEl.id
+
         }
     })
     return answer
@@ -50,15 +48,15 @@ function getSelected() {
 // event listener to submit answer when clicking submit button and increase score if correct
 
 submitBtn.addEventListener('click', () => {
-    const answer = getSelected()
+    const answer = getAnswer()
 
     if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
+        if(answer == quizData[currentQuiz].correct) {
             score++
         }
         currentQuiz++
         if(currentQuiz < quizData.length) {
-            loadQuiz()
+            displayQuiz()
          } else {
              quiz.innerHTML = `
              <h2>You got ${score}/${quizData.length} questions right!</h2>
@@ -67,7 +65,5 @@ submitBtn.addEventListener('click', () => {
          }
       }
   })
-
-
 
 
