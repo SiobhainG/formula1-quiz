@@ -3,21 +3,18 @@
 // finds all HTML elements
 
 const quiz= document.getElementById('quiz')
-const answerEls = document.querySelectorAll('.answer')
+const answerChoice = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
-const submitBtn = document.getElementById('submit')
+const nextBtn = document.getElementById('next')
 
 // defines quiz score
 
 let currentQuiz = 0
 let score = 0
-
-
-
 
 // loads the quiz questions and answers
 
@@ -36,10 +33,9 @@ function displayQuiz() {
 
 function getAnswer() {
     let answer
-    answerEls.forEach(answerEl => {
+    answerChoice.forEach(answerEl => {
         if(answerEl.checked) {
             answer = answerEl.id
-
         }
     })
     return answer
@@ -47,7 +43,7 @@ function getAnswer() {
 
 // event listener to submit answer when clicking submit button and increase score if correct
 
-submitBtn.addEventListener('click', () => {
+nextBtn.addEventListener('click', () => {
     const answer = getAnswer()
 
     if(answer) {

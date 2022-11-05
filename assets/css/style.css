@@ -50,6 +50,7 @@ ul li {
 
 ul li:hover {
     background-color: #7d5760;
+    cursor: pointer;
 }
 
 input {
