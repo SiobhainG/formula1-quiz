@@ -2,14 +2,14 @@
 
 // finds all HTML elements
 
-const quiz= document.getElementById('quiz')
-const answerChoice = document.querySelectorAll('.answer')
-const questionEl = document.getElementById('question')
-const a_text = document.getElementById('a_text')
-const b_text = document.getElementById('b_text')
-const c_text = document.getElementById('c_text')
-const d_text = document.getElementById('d_text')
-const nextBtn = document.getElementById('next')
+let quiz= document.getElementById('quiz')
+let questionTitle = document.getElementById('question')
+let a_text = document.getElementById('a_text')
+let b_text = document.getElementById('b_text')
+let c_text = document.getElementById('c_text')
+let d_text = document.getElementById('d_text')
+let nextBtn = document.getElementById('next')
+
 
 // defines quiz score
 
@@ -20,8 +20,8 @@ let score = 0
 
 displayQuiz()
 function displayQuiz() {
-    const currentQuizData = quizData[currentQuiz]
-    questionEl.innerText = currentQuizData.question
+    let currentQuizData = quizData[currentQuiz]
+    questionTitle.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
@@ -32,23 +32,23 @@ function displayQuiz() {
 // function to return users' answer
 
 function getAnswer() {
-    let answer
-    answerChoice.forEach(answerEl => {
-        if(answerEl.checked) {
-            answer = answerEl.id
+let answerChoice = document.querySelectorAll('.answer')
+    answerChoice.forEach(answerChoice => {
+        if(answerChoice.checked) {
+            answer = answerChoice.id
         }
     })
     return answer
 }
 
+
 // event listener to submit answer when clicking submit button and increase score if correct
 
 nextBtn.addEventListener('click', () => {
-    const answer = getAnswer()
-
+    let answer = getAnswer()
     if(answer) {
         if(answer == quizData[currentQuiz].correct) {
-            score++
+            score++;
         }
         currentQuiz++
         if(currentQuiz < quizData.length) {
