@@ -3,6 +3,7 @@
 // finds all HTML elements
 
 let quiz= document.getElementById('quiz')
+let answerChoice = document.querySelectorAll('.answer')
 let questionTitle = document.getElementById('question')
 let a_text = document.getElementById('a_text')
 let b_text = document.getElementById('b_text')
@@ -19,7 +20,9 @@ let score = 0
 // loads the quiz questions and answers
 
 displayQuiz()
+
 function displayQuiz() {
+    resetAnswers ()
     let currentQuizData = quizData[currentQuiz]
     questionTitle.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
@@ -28,11 +31,14 @@ function displayQuiz() {
     d_text.innerText = currentQuizData.d
 }
 
+function resetAnswers() {
+    answerChoice.forEach(answerChoice => answerChoice.checked = false)
+}
+
 
 // function to return users' answer
 
 function getAnswer() {
-let answerChoice = document.querySelectorAll('.answer')
     answerChoice.forEach(answerChoice => {
         if(answerChoice.checked) {
             answer = answerChoice.id
