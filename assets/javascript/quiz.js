@@ -55,7 +55,7 @@ nextBtn.addEventListener('click', () => {
             displayQuiz()
          } else {
              quiz.innerHTML = `
-             <h2>You got ${score}/${quizData.length} questions right!</h2>
+             <h2>Congrats! You got ${score}/${quizData.length} questions right!</h2>
              <button onclick="location.reload()">Try Again?</button>
              `
          }
