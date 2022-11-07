@@ -53,6 +53,9 @@ This quiz is designed to test users knowledge on Formula One. It includes 8 mult
 ![CSS Check](/assets/images/css-test.PNG)
 - Accessibility
     - I confirmed that the colours and fonts chosen were legible and accessible by running it through the Lighthouse in devtools.
+    
+![Lighthouse Test 1](/assets/images/lighthouse1.PNG)
+![Lighthouse Test 2](/assets/images/lighthouse2.PNG)
 
 
 
