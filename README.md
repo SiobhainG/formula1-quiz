@@ -27,5 +27,20 @@ This quiz is designed to test users knowledge on Formula One. It includes 8 mult
 ![End Image](/assets/images/endpage.PNG)
 
 ## Testing
-    - I tested the quiz works in different browsers - Chrome, Firefox, Safari.
+- I tested the quiz works on Desktop, iOS and Andrioid using [SmartBear's cross browser testing tool](https://smartbear.com/product/bitbar/). I signed up for a free trial and used the tool to ensure the project was working on all three device types.
+
+![Desktop Test](/assets/images/desktop-test.png)
+![iOS Test and Android test](/assets/images/ios-and-android-test.jpg)
+
+- I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the Devtools devide toolbar.
+- I confirmed that the Start and Next buttons work correctly on all devices, that they take the users to the correct page and log the users answers before moving on.
+
+### Bugs
+#### Solved Bugs
+- After deploying my project to GitHub pages, I disovered the background image of the quiz was not working.
+- I added ".." to the beginning of the file path for my background image in the CSS stylesheet and this resolved the issue.
+
+### Validator Testing
+
+
 
