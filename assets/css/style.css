@@ -17,11 +17,23 @@ body {
     margin: 0;
 }
 
+.welcome-section {
+    border-radius: 10px;
+    color: #ebc3d4;
+    text-align: center;
+}
+
+.welcome-section p {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
 .quiz-outer {
     border: 2px solid #7d5760;
     background-color: #1f131c;
     border-radius: 10px;
-    width: 600px;
+    width: 700px;
 }
 
 .quiz-text {
