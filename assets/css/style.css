@@ -28,8 +28,9 @@ a {
 }
 
 .welcome-section p {
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
+    font-size: 30px;
 }
 
 
@@ -72,7 +73,7 @@ ul li {
     font-size: 30px;
 }
 
-ul li:hover {
+ul li:hover, label:hover {
     background-color: #7d5760;
     cursor: pointer;
 }
@@ -96,7 +97,22 @@ button:hover {
     background-color: #ed8f79;
 }
 
+/*Media queries*/
 
+@media only screen and (max-width: 700px) {
+    .quiz-outer, .welcome-section {
+        width: 80vw;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 20px;
+    }
+
+}
 
 
 
