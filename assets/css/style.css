@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .welcome-section {
     border-radius: 10px;
     color: #ebc3d4;
@@ -91,6 +95,8 @@ button {
 button:hover {
     background-color: #ed8f79;
 }
+
+
 
 
 
