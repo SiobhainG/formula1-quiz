@@ -57,13 +57,20 @@ This quiz is designed to test users knowledge on Formula One. It includes 8 mult
 ![Lighthouse Test 1](/assets/images/lighthouse1.PNG)
 ![Lighthouse Test 2](/assets/images/lighthouse2.PNG)
 
-
-
 ## Deployment
+
+### GitHub Pages
 - This website was deployed to GitHub pages. The steps to deploy are:
     - In the GitHub repository, navigate to the Settings tab
     - From the source section drop-down menu, choose the main branch
     - Once the main branch is selected, the page has provided the link to the completed website
+
+### Cloning and Forking
+- Go to the [repository](https://github.com/SiobhainG/formula1-quiz) on GitHub
+- Click the Code button next to the green Gitpod button
+- Copy the link provided under the HTTPS section
+- Open a GitBash terminal and navigate to the directory where you want to store the clone
+- Type git clone on the command line, paste the URL and press the Enter key
 
 The live link can be found here - [Formula One Quiz](https://siobhaing.github.io/formula1-quiz/index.html)
 
