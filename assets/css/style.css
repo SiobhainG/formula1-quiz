@@ -52,6 +52,7 @@ h1 {
     color: #ed8f79;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 3px;
+    padding: 5px;
 }
 
 h2 {
@@ -60,6 +61,7 @@ h2 {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 3px;
     color: #ebc3d4;
+    padding: 20px;
 }
 
 ul {
@@ -78,9 +80,6 @@ ul li:hover, label:hover {
     cursor: pointer;
 }
 
-input {
-    visibility: visible;
-}
 
 button {
     color: #1f131c;
