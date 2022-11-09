@@ -42,14 +42,14 @@ function getAnswer() {
         if(answerChoice.checked) {
             answer = answerChoice.id;
         }
-    })
+    });
     return answer;
 }
 
 
-// function to submit answer when clicking submit button and increase score if correct
+// function to submit answer and move on to next question or end the quiz
 
-function chooseAnswer() {
+function nextQuestion() {
     let answer = getAnswer();
     if(answer) {
         if(answer == quizData[currentQuiz].correct) {
@@ -66,5 +66,3 @@ function chooseAnswer() {
          }
       }
   }
-
-
